@@ -1,33 +1,147 @@
 body {
     font-family: Roboto, sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    background-color: #1f2937;
+    padding: 10px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header .logo {
     font-size: 24px;
-    color: #F9FAF8;
+    color: #f9faf8;
     font-weight: 900;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.header nav ul li {
+    margin: 10px;
+}
+
+.header nav ul li a {
+    color: #f9faf8;
 }
 
 .hero {
-    background-color: #1F2937;
-    
+    background-color: #1f2937;
+    padding: 30px;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .hero-text h1 {
-    color: #F9FAF8;
+    color: #f9faf8;
     font-size: 48px;
     font-weight: 900;
+    margin: 0;
 }
 
 .hero-text p {
     font-size: 18px;
-    color: #E5E7EB;
+    color: #e5e7eb;
 }
 
 .hero-text button {
+    background-color: #3882f6;
+    border: none;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 5px;
+}
 
+.hero-image img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.random-information {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.random-information .title {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    text-align: center;
+}
+
+.random-information--content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.random-information--content .card {
+    width: 150px;
+    height: auto;
+    text-align: center;
+}
+
+.random-information--content .card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 2px solid #3882f6;
+    border-radius: 10px;
+}
+
+.quote {
+    padding: 50px;
+}
+
+.quote .container p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.quote .container cite {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.quote .container p small {
+    display: block;
+    text-align: right;
+    width: 100%;
+    font-size: 20px;
 }
 
 .footer {
-    background-color: #1F2937;
+    background-color: #1f2937;
 }
